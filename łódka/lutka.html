@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>łutka</title>
+</head>
+<body>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* #strona{
+            height: 1000px;
+        } */
+        #slonce{
+            background-image: url('sun.png');
+            height: 200px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #chmura {
+        background-image:url('cloud.png');
+        height: 100px;
+        background-size:contain;
+        position: relative;
+        top: -150px;
+        }
+        @keyframes ruch
+        {
+        0% { background-position:0 0, 0 0, 0 0; }
+        100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+        }   
+        #chmura {
+        background-image:url('cloud.png');
+        animation:ruch 200s linear infinite alternate;
+        }
+        #woda1{
+            height: 100px;
+            background-color: rgb(76, 155, 193);
+            bottom: 0px;
+            position: absolute;
+            width: 100%;
+            z-index: 12;
+        }
+        #woda2{
+            height: 30px;
+            background-color: rgb(86, 175, 213);
+            bottom: 100px;
+            position: absolute;
+            width: 100%;
+        }
+        #woda3{
+            height: 30px;
+            background-color: rgb(76, 155, 193);
+            bottom: 130px;
+            position: absolute;
+            width: 100%;
+        }
+        #fala1 {
+        background-image:url('waves.png');
+        height: 100px;
+        width: 100%;
+        background-size:contain;
+        position: absolute;
+        bottom: 100px;
+        z-index: 10;
+        }
+        @keyframes ruch1
+        {
+        0% { background-position:0 0, 0 0, 0 0; }
+        100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+        }   
+        #fala1 {
+        background-image:url('waves.png');
+        animation:ruch 150s linear infinite alternate;
+        }
+        #fala2 {
+        background-image:url('waves.png');
+        height: 80px;
+        width: 100%;
+        background-size:contain;
+        position: absolute;
+        bottom: 130px;
+        z-index: 8;
+        }
+        @keyframes ruch2
+        {
+        0% { background-position:0 0, 0 0, 0 0; }
+        100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+        }   
+        #fala2 {
+        background-image:url('waves.png');
+        animation:ruch2 250s linear infinite alternate;
+        }
+        #fala3 {
+        background-image:url('waves.png');
+        height: 60px;
+        width: 100%;
+        background-size:contain;
+        position: absolute;
+        bottom: 160px;
+        z-index: 6;
+        }
+        @keyframes ruch3
+        {
+        0% { background-position:0 0, 0 0, 0 0; }
+        100% { background-position:10000px 0, 7500px 0, 5000px 0; }
+        }   
+        #fala3 {
+        background-image:url('waves.png');
+        animation:ruch3 350s linear infinite alternate;
+        }
+        @keyframes statek{
+            0%,100%{
+                bottom: 110px;
+                left: 100px;
+            }
+            10%,90%{
+                bottom: 110px;
+                left: 300px;
+                transform:rotate(10deg);
+            }
+            20%,80%{
+                bottom: 110px;
+                left: 500px;
+                transform:rotate(-10deg);
+            }
+            30%,70%{
+                bottom: 110px;
+                left: 700px;
+                transform:rotate(10deg);
+            }
+            40%,60%{
+                bottom: 110px;
+                left: 900px;
+                transform: rotate(-10deg);
+            }
+            50%{
+                bottom: 110px;
+                left: 1200px;
+                transform:rotate(0deg);
+            }
+            /* 60%{
+                bottom: 110px;
+                left: 700px;
+                transform: rotate(-10deg);
+            }
+            70%{
+                bottom: 110px;
+                left: 800px;
+                transform:rotate(10deg);
+            }
+            80%{
+                bottom: 110px;
+                left: 900px;
+                transform: rotate(-10deg);
+            }
+            90%{
+                bottom: 110px;
+                left: 1000px;
+                transform:rotate(10deg);
+            } */
+            /* 100%{
+                bottom: 110px;
+                left: 1100px;
+                transform: rotate(-10deg);
+            } */
+        }
+        #utka{
+            background-image:url('boat.png');
+            height: 400px;
+            width: 400px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:contain;
+            position: absolute;
+            bottom: 110px;
+            left: 100px;
+            z-index: 9;
+            animation: statek 30s infinite;
+        }
+        /* #gora{
+            background-image: url('gora.png');
+            width: 200px;
+            height: 200px;
+        } */
+        
+
+    </style>
+
+    <!-- <div id="strona"> -->
+        <div id="slonce"></div>
+        <div id="chmura"></div>
+        <div id="fala1"></div>
+        <div id="woda1"></div>
+        <div id="woda2"></div>
+        <div id="fala2"></div>
+        <div id="woda3"></div>
+        <div id="fala3"></div>
+        <div id="utka"></div>
+        <!-- <div id="gora"></div> -->
+    <!-- </div> -->
+    
+
+</body>
+</html>
